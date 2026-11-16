@@ -1,7 +1,12 @@
 # HSN Champions
 
+> **Not in use.** Later on 17 Nov 2026 Hassan asked for these pages to go back into his HSN Test Lab site instead.
+> They now live there, under the **Champions** tab (`hsn-test-lab`: `js/champions/` and `champions.css`), and that is
+> the copy that is kept up to date. GitHub Pages was never switched on for this repository, so it has no website.
+> Nothing depends on it: it can be kept as a spare or deleted.
+
 The website for the Champions work: the five agents, the small-account challenge and the forward test.
-It lives at **https://lilprogact.github.io/hsn-champions/**
+It was built to live at https://lilprogact.github.io/hsn-champions/
 
 Hassan asked for it on 17 Nov 2026: a website of its own, in a repository of its own, Apple style, holding only what
 the website needs.
