@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src https://api.github.com; base-uri 'none'; form-action 'none'; object-src 'none'">
+  <meta name="referrer" content="no-referrer">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="HSN Champions">
+  <title>HSN Champions</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="lock" class="lock" hidden>
+  <form id="lock-form" class="lock-box" autocomplete="off" novalidate>
+    <h1 class="lock-title">HSN Champions</h1>
+    <p id="lock-sub" class="lock-sub">Enter your Test Lab password.</p>
+    <div id="lock-field" class="lock-field">
+      <label class="visually-hidden" for="lock-pass">Password</label>
+      <input id="lock-pass" type="password" placeholder="Password" autocomplete="current-password" autocapitalize="off" autocorrect="off" spellcheck="false" enterkeyhint="go">
+      <button id="lock-go" type="submit" aria-label="Unlock"></button>
+    </div>
+    <p id="lock-error" class="lock-error" role="alert"></p>
+    <p id="lock-help" class="lock-help">The same password as your HSN Test Lab site. Nothing is shown until you enter it.</p>
+    <a id="lock-setup" class="button" href="../hsn-test-lab/" hidden>Open HSN Test Lab</a>
+  </form>
+</div>
+
+<header id="nav" class="nav" hidden>
+  <div class="nav-inner">
+    <a class="nav-brand" href="#overview">HSN Champions</a>
+    <nav class="nav-links" aria-label="Pages">
+      <a href="#overview" data-view="overview">Overview</a>
+      <a href="#forward" data-view="forward">Forward test</a>
+      <a href="#agents" data-view="agents">Agents</a>
+      <a href="#challenge" data-view="challenge">Challenge</a>
+      <a href="#checks" data-view="checks">Checks</a>
+    </nav>
+    <button id="lock-now" class="nav-button" type="button" aria-label="Lock"></button>
+  </div>
+</header>
+
+<main id="main" hidden></main>
+
+<footer id="foot" class="foot" hidden>
+  <div class="wrap">
+    <p id="foot-read"></p>
+    <p>Paper only. No order is sent to any account. This site only reads your private repository: it cannot start a GitHub job or change a file.</p>
+    <button id="refresh" class="link-button" type="button">Read again</button>
+  </div>
+</footer>
+
+<script type="module" src="js/app.js"></script>
+</body>
+</html>
